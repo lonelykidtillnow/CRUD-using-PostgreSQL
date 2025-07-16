@@ -22,7 +22,7 @@ const Create=()=>{
 
     async function api() {
         try{
-            const req=await fetch("http://localhost:3000/",{
+            const req=await fetch("https://crud-using-postgresql-1.onrender.com",{
                 "method":"POST",
                 headers:{"Content-Type":"application/json"},
                 "body":JSON.stringify(value)
