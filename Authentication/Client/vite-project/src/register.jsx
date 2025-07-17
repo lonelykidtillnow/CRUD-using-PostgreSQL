@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./tailwind.css"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 const Register=()=>{
 
@@ -125,6 +125,14 @@ const Register=()=>{
                     >
                         Submit
                     </button>
+                    <Link to='/login'>
+                        <button
+                            type="submit"
+                            className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg"
+                        >
+                            Login
+                        </button>
+                    </Link>
                 </form>
             </div>
         </div>
