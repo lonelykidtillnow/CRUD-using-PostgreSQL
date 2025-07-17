@@ -14,7 +14,7 @@ const Register=()=>{
     })
 
     async function register(){
-        const req=await fetch('http://localhost:3000/register',{
+        const req=await fetch('https://crud-using-postgresql-2.onrender.com/register',{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(value)

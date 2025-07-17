@@ -10,7 +10,7 @@ const Welcome=()=>{
 
     async function api(){
         try{
-            const req=await fetch('http://localhost:3000/users')
+            const req=await fetch('https://crud-using-postgresql-2.onrender.com/users')
             const res=await req.json()
             setvalue(res.data)
             console.log(res.data)
