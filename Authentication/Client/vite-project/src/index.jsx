@@ -7,6 +7,10 @@ import Welcome from "./welcome";
 
 const Display=createBrowserRouter([
     {
+        path:"/",
+        element:<Register />
+    },
+    {
         path:'/register',
         element:<Register />
     },
