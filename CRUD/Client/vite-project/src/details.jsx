@@ -125,7 +125,7 @@ const Fetch=()=>{
                         <button
                             className={`bg-black text-white p-[5px] rounded-lg w-[100px] ${page===1 ? "bg-gray-500":"bg-black"}`}
                             onClick={()=>{
-                                if(page>1){
+                                if(page!=1){
                                     setpage(page-1)
                                 }
                             }}>Prev Page</button>
@@ -143,7 +143,7 @@ const Fetch=()=>{
                         <button 
                             className={`bg-black text-white p-[5px] rounded-lg w-[100px] ${page===totalpage ? "bg-gray-500":"bg-black"}`}
                             onClick={()=>{
-                                if(page<totalpage){
+                                if(page!=totalpage){
                                     setpage(page+1)
                                 }
                             }}>Next Page</button>
