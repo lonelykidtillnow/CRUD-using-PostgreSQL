@@ -59,7 +59,7 @@ const Fetch=()=>{
     console.log("Records",records)
 
     //For Button
-    const totalpage=Math.ceil(value.length/itemsperpage)    //Math.ceil(51/5), Math.ceil(10.2), 11
+    const totalpage=Math.ceil(Search.length/itemsperpage)    //Math.ceil(51/5), Math.ceil(10.2), 11
     console.log(totalpage)
 
     //For Button
@@ -77,6 +77,7 @@ const Fetch=()=>{
                                 className="border-[1px] border-black rounded-xl px-[20px] py-[5px] w-[100%]"
                                 onChange={(e)=>{
                                     setsearch(e.target.value)
+                                    setpage(1)
                                 }}></input>
                     </div>
                     <table className="w-[100%]">
