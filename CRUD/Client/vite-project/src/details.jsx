@@ -77,6 +77,7 @@ const Fetch=()=>{
                                 className="border-[1px] border-black rounded-xl px-[20px] py-[5px] w-[100%]"
                                 onChange={(e)=>{
                                     setsearch(e.target.value)
+                                    //Search Details Display in First page
                                     setpage(1)
                                 }}></input>
                     </div>
